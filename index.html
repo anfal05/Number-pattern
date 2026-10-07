@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Pattern</title>
+</head>
+<body>
+
+<h2>Number Pattern</h2>
+
+<button onclick="printPattern()">Show Pattern</button>
+
+<pre id="output"></pre>
+
+<script>
+function printPattern() {
+    let output = "";
+
+    for (let row = 1; row <= 5; row++) {
+        for (let col = 1; col <= row; col++) {
+            output += col + " ";
+        }
+        output += "\n";
+    }
+
+    document.getElementById("output").textContent = output;
+}
+</script>
+
+</body>
+</html>
